@@ -1,0 +1,16 @@
+[common]
+server_addr = 110.40.35.52
+server_port = 2333
+tcp_mux = true
+protocol = tcp
+user = 4a54258d24ab11d07004440a74a5333f
+token = LoCyanToken
+dns_server = 223.6.6.6
+tls_enable = false
+
+[aojkdfo]
+privilege_mode = true
+type = tcp
+local_ip = 127.0.0.1
+local_port = 3389
+remote_port = 48796

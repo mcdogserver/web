@@ -1,0 +1,240 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>mcdogserver的服务器</title> 
+  <link rel="shortcut icon" href="https://www.mcdogserver.top/photo/icon.webp"> 
+ 
+  <style>  
+    body {  
+      margin: 0;  
+      padding: 0;  
+      background-image: url('');  
+      background-size: cover;  
+      background-position: center;  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      height: 100vh;  
+    }
+
+    header {  
+      background-color: rgba(255, 255, 255, 0.9);  
+      padding: 1rem;  
+      text-align: center;  
+      border-radius: 10px;  
+    }
+
+    nav {  
+      display: flex;  
+      justify-content: space-around;  
+      background-color: rgba(255, 255, 255, 0.9);  
+      padding: 1rem;  
+      border-radius: 10px;  
+    }
+
+    nav a {  
+      color: #4CAF50;  
+      text-decoration: none;  
+      padding: 0.5rem;  
+    }
+
+    nav a:hover {  
+      background-color: #4CAF50;  
+      color: white;  
+    }
+
+    main {  
+      padding: 1rem;  
+      background-color: rgba(255, 255, 255, 0.8);  
+      border-radius: 10px;  
+    }
+
+    footer {  
+      background-color: rgba(255, 255, 255, 0.9);  
+      text-align: center;  
+      padding: 1rem;  
+      border-radius: 10px;  
+      margin-top: 1rem;  
+    }  
+  </style>  
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var images = [
+        'https://www.mcdogserver.top/photo/1.webp',
+        'https://www.mcdogserver.top/photo/2.webp',
+        'https://www.mcdogserver.top/photo/3.webp',
+        'https://www.mcdogserver.top/photo/4.webp',
+        'https://www.mcdogserver.top/photo/5.webp',
+      ];
+      var body = document.querySelector('body');
+      var randomIndex = Math.floor(Math.random() * images.length);
+      var randomImage = images[randomIndex];
+      body.style.backgroundImage = 'url(' + randomImage + ')';
+    });
+  </script>
+</head>  
+<body>  
+  <header>  
+    <h1>mcdogserver的服务器</h1>
+  </header>
+
+  <nav>  
+    <a href="https://view.officeapps.live.com/op/view.aspx?src=https://www.mcdogserver.top/help.docx ">mcdogserver帮助文档</a>
+    <a href="https://mcdogserver.s3.bitiful.net/mc.zip">pcl下载</a>  
+    <a href="https://api.imlazy.ink/mcapi/?name=Minecraft%20%E6%9C%8D%E5%8A%A1%E5%99%A8&host=mc.mcdogserver.top&type=html&getmotd=%0a%0a&getbg=1.jpg ">服务器状态获取</a>
+    <a href="https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=4BOH3Fg3Fjub6Sh7TKn-vsKkg2eyQjl_&authKey=HhWMVOFFvsxz9dDbNEfDPtyUvS%2BZ6E%2FiCSpZ7JLfsY2SBQe8eVToud%2FS3Eaz9lRW&noverify=0&group_code=702894538 ">加入QQ群</a>
+  </nav>
+  
+  <main>  
+    <section id="server-info">  
+      <h2>服务器信息</h2>  
+      <p>服务器版本：1.9-1.21</p>  
+      <p>服务器地址：mc.mcdogserver.top</p>  
+      <p>服务器管理员：worldcctv48,mybe,louis,Xylophone</p>  
+    </section>
+
+    <section id="rules">  
+      <h2>规则</h2>  
+      <ul>  
+        <li>禁止恶意攻击其他玩家</li>  
+        <li>禁止骚扰其他玩家</li>  
+        <li>禁止使用不当语言</li>  
+        <li>禁止传播色情、暴力等不良信息</li>  
+      </ul>  
+    </section>
+
+    <section id="server-status">  
+      <h2>公告栏</h2> 
+      <li>枪响请老死</li>
+      <li>你的邮箱申请/问题反馈将在14天内受理</li>
+      <li>反馈请发邮件至3588177344@qq.com</li>
+
+      
+    </section>  
+  </main>
+  
+
+  <footer>  
+    <p>声明：未经允许禁止搬运</p> 
+    <h2>广告栏</h2>
+    <SCRIPT language=JavaScript>
+
+<!--
+
+var caution = false
+
+function setCookie(name, value, expires, path, domain, secure) {
+
+var curCookie = name + "=" + escape(value) +
+
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+
+((path) ? "; path=" + path : "") +
+
+((domain) ? "; domain=" + domain : "") +
+
+((secure) ? "; secure" : "")
+
+if (!caution || (name + "=" + escape(value)).length <= 4000)
+
+document.cookie = curCookie
+
+else
+
+if (confirm("Cookie exceeds 4KB and will be cut!"))
+
+document.cookie = curCookie
+
+}
+
+function getCookie(name) {
+
+var prefix = name + "="
+
+var cookieStartIndex = document.cookie.indexOf(prefix)
+
+if (cookieStartIndex == -1)
+
+return null
+
+var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+
+if (cookieEndIndex == -1)
+
+cookieEndIndex = document.cookie.length
+
+return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+
+}
+
+function deleteCookie(name, path, domain) {
+
+if (getCookie(name)) {
+
+document.cookie = name + "=" +
+
+((path) ? "; path=" + path : "") +
+
+((domain) ? "; domain=" + domain : "") +
+
+"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+
+}
+
+}
+
+function fixDate(date) {
+
+var base = new Date(0)
+
+var skew = base.getTime()
+
+if (skew > 0)
+
+date.setTime(date.getTime() - skew)
+
+}
+
+var now = new Date()
+
+fixDate(now)
+
+now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+
+var visits = getCookie("counter")
+
+if (!visits)
+
+visits = 1
+
+else
+
+visits = parseInt(visits) + 1
+
+setCookie("counter", visits, now)
+
+document.write("欢迎光临本站，您是第" + visits + "位访问者！")
+
+// -->
+
+</SCRIPT>
+  <!--音乐播放器开始-->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="https://myhkw.cn/player/js/player.js" id="myhk" key="demo" m="1"></script>
+<!--音乐播放器结束-->
+
+    <ul> 
+      <li>用映射，就用<a href="https://preview.locyanfrp.cn/dashboard">乐青映射</a></li>
+      <li><a href="https://afdian.net/a/mcdogserver">广告位招租</a></li>
+      <li><a href="https://afdian.net/a/mcdogserver">广告位招租</a></li>
+     </ul>
+     <a href="https://ipw.cn/ipv6webcheck/?site=www.mcdogserver.top" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a>
+     <a href="https://ipw.cn/ssl/?site=www.mcdogserver.top" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a>
+  </footer>  
+
+  
+</body>  
+</html>
